@@ -919,7 +919,7 @@ GameObject:
   - component: {fileID: 3503345474291667618}
   - component: {fileID: 3503345474291667619}
   m_Layer: 5
-  m_Name: menu2
+  m_Name: Cloths
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1039,7 +1039,7 @@ GameObject:
   - component: {fileID: 3503345474383475687}
   - component: {fileID: 3503345474383475680}
   m_Layer: 5
-  m_Name: menu
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1782,7 +1782,7 @@ GameObject:
   - component: {fileID: 3503345475374926030}
   - component: {fileID: 3503345475374926031}
   m_Layer: 5
-  m_Name: menu1
+  m_Name: Tools
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
