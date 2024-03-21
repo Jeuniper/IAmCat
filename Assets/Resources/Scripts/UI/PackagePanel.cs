@@ -8,8 +8,8 @@ public class PackagePanel : BasePanel
     private Transform UIMenu;
     private Transform UIMenuTools;
     private Transform UIMenuCloths;
-    private Transform CloseBtn;
-    private Transform Center;
+    private Transform UICloseBtn;
+    private Transform UICenter;
     private Transform UIScrollView;
     private Transform UIDetailPanel;
     private Transform UIRightBtn;//
@@ -59,8 +59,8 @@ public class PackagePanel : BasePanel
         UIMenu = transform.Find("Top/Menu");
         UIMenuTools = transform.Find("Top/Menu/Tools");
         UIMenuCloths = transform.Find("Top/Menu/Cloths");
-        CloseBtn = transform.Find("Top/backButton");
-        Center = transform.Find("Center");
+        UICloseBtn = transform.Find("Top/backButton");
+        UICenter = transform.Find("Center");
         UIScrollView = transform.Find("Center/ScrollView");
         UIDetailPanel = transform.Find("Center/ItemDetail");
     }
@@ -68,10 +68,16 @@ public class PackagePanel : BasePanel
     private void InitClick()//初始化所有点击事件
     {
         UIMenuTools.GetComponent<Button>().onClick.AddListener(OnClickTools);
+        UICloseBtn.GetComponent<Button>().onClick.AddListener(OnClickClose);
     }
 
     private void OnClickTools()
     {
         print("OnClickTools");
+    }
+    private void OnClickClose()
+    {
+        Debug.Log(">>>>> OnClickClose");
+        ClosePanel();
     }
 }
